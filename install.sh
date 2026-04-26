@@ -629,7 +629,7 @@ ENV
   # Correct syntax per https://svelte.dev/docs/cli/sveltekit-adapter
   log_step "Configuring adapter-node (bun x sv add sveltekit-adapter=\"adapter:node\")..."
   cd "$PANEL_DIR"
-  yes | bun x --yes sv add "sveltekit-adapter=adapter:node" --install bun \
+  bun x --yes sv add "sveltekit-adapter=adapter:node" --install bun \
     && log_done "adapter-node configured." \
     || log_warn "sv add sveltekit-adapter failed — build may fail; check svelte.config.js"
 
