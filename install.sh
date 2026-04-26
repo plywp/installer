@@ -4,7 +4,7 @@
 #  Installs PlyWP (panel + plyorde daemon) on your server
 #  https://github.com/plywp
 # ============================================================
-set -e
+set -euo pipefail
 
 RESET="\e[0m"
 BOLD="\e[1m"
